@@ -1,0 +1,71 @@
+.cont-Quiensoy{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.acerca-quien{
+    width: 50%;
+    background-color: rgb(32, 32, 32);
+    color: rgb(255, 255, 255);
+}
+.acerca-quien h2,
+.acerca-quien p {
+    margin: 130px;
+}
+.acerca-quien h2{
+    font-size:40px;
+    margin-bottom: 10px;
+}
+.acerca-quien p{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1cm;
+    font-family: Roboto;
+    font-weight: lighter;
+}
+
+.foto-quiensoy{
+    width: 50%;
+    background-color: rgb(32, 32, 32);
+    padding: 30px;
+    padding-left: 60px;
+}
+
+
+
+@media screen  and (max-width: 400px){
+
+    .cont-Quiensoy{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    
+    }
+
+    .acerca-quien{
+        width: 100%;
+        background-color: rgb(32, 32, 32);
+        color: rgb(255, 255, 255);
+    }
+
+    .acerca-quien h2,
+    .acerca-quien p {
+    margin: 20px;
+}
+.foto-quiensoy{
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    padding: 0px;
+    padding-left: 0px;
+}
+.foto-quiensoy img{
+    width: 100%;
+}
+
+}

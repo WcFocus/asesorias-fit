@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.contenedor{
+    width: 600px;
+    margin: 40px auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.formulario .contenedor-inputs{
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px 5px 0px 0px
+}
+.formulario input[type="text"],
+.formulario input[type="email"]{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+}
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus{
+    border-bottom: 2px solid #246eb9;
+    outline: none;
+    transition: all .4s;
+}
+
+.formulario input[type="radio"]{
+    display: none;
+}
+
+.formulario .sexo{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.formulario .sexo .hombre{
+    border-radius: 3px 0 0 3px;
+}
+.formulario .sexo .mujer{
+    border-radius: 0 3px 3px 0;
+}
+
+.formulario .label-radio{
+    background-color: rgba(249, 160, 63, 0.4);
+    color: #fff;
+    padding: 10px;
+    width: 49.5%;
+    text-align: center;
+}
+
+.formulario input[type="radio"]:checked + .label-radio{
+background: #ff3c00;
+transition: all .3s;
+}
+
+
+.formulario .terminos{
+    text-align: center;
+    color: #424242;
+}
+.formulario .terminos label{
+    margin-left: 10px;
+}
+
+.formulario .error{
+    display: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    background: #ce1818;
+    color: #fff;
+    padding: 15px 10px;
+    padding-left: 40px;
+    transition: all .4s;
+}
+
+
+.formulario .btn{
+    width: 100%;
+    text-align: center;
+    background: #246eb9;
+    color: #fff;
+    border: none;
+    display: block;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 0 0 6px 6px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    outline: none;
+    transition: all .4s;
+}
+.formulario .btn:hover{
+    background: #4357ad ;
+}
+
+
+@media screen  and (max-width: 400px){
+
+    .contenedor{
+        width: 300px;
+        margin: 40px auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+}

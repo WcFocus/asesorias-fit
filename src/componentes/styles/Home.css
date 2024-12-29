@@ -1,0 +1,130 @@
+*{
+    font-family: 'Teko', sans-serif;
+}
+.fondoprin1{
+    width: 100%;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    margin-top: 50px;
+}
+.cont-home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-home{
+    width: 45%;
+    margin-top: 200px;
+    margin-bottom: 250px;
+    background-color: #5a5a5a1c;
+    border-radius: 20px;
+    text-align: center;
+    padding: 60px;
+    z-index: 0;
+    transition: all .9s;
+}
+
+.info-home .text-backfriday{
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 60px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.info-home:hover{
+    background-color: #8f8f8fd2;
+}
+
+a.comenzar{
+    padding: 12px 25px;
+    background-color: none;
+    border: 4px solid #ff3c00;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    top: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: .35s;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;  
+}
+
+a.comenzar::before{
+    content: "";
+    background-color: #ff3c00;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .25s;
+}
+a.comenzar:hover::before{
+    height: 100%;
+}
+
+
+
+@media screen  and (max-width: 400px){
+    .fondoprin1{
+        width: 100%;
+        padding-top: 50px;
+        transform: scale(2.5);
+        -webkit-filter: blur(1px);
+    }
+
+    .info-home{
+        width: 95%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding: 10px;
+    }
+
+    .info-home .text-backfriday{
+        color: rgba(255, 255, 255, 0.726);
+        font-size: 30px;
+
+    }
+
+    a.comenzar{
+    padding: 12px 25px;
+    background-color: none;
+    border: 4px solid #ff3c00;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 2px;
+    top: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: .35s;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;  
+}
+
+a.comenzar::before{
+    content: "";
+    background-color: #ff3c00;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .25s;
+}
+a.comenzar:hover::before{
+    height: 100%;
+}
+}
